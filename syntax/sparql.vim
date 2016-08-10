@@ -16,10 +16,10 @@ endif
 
 " A.3 Keywords are matched in a case-insensitive manner. (only keywords)
 syntax case ignore
-syntax keyword rqKeyword BASE PREFIX SELECT DISTINCT CONSTRUCT DESCRIBE ASK FROM NAMED WHERE ORDER BY ASC DESC LIMIT OFFSET OPTIONAL GRAPH FILTER REGEX UNION
-syntax keyword rqBuiltinCall STR LANG LANGMATCHES DATATYPE BOUND isIRI isURI isBLANK isLITERAL 
-syntax keyword rqKeyword1_1 MINUS DISTINCT GROUP BY HAVING NOT EXISTS SERVICE AS BINDINGS
-syntax keyword rqBuiltinCall1_1 ROUND BIND 
+syntax keyword rqKeyword BASE PREFIX SELECT DISTINCT CONSTRUCT DESCRIBE ASK FROM NAMED WHERE ORDER BY ASC DESC LIMIT OFFSET OPTIONAL GRAPH FILTER UNION
+syntax keyword rqBuiltinCall str lang REGEX sameTERM langMatches datatype bound isIRI isURI isBlank isLiteral
+syntax keyword rqKeyword1_1 MINUS DISTINCT GROUP BY HAVING NOT EXISTS SERVICE AS BINDINGS IF IN BIND COALESCE
+syntax keyword rqBuiltinCall1_1 isNumeric IRI BNODE STRDT STRLANG UUID STRUUID STRLEN SUBSTR UCASE LCASE STRSTARTS STRENDS CONTAINS STRBEFORE STRAFTER ENCODE_FOR_URI CONCAT abs round ceil floor RAND now year month day hours minutes seconds timezone tz MD5 SHA1 SHA256 SHA384 SHA512
 syntax keyword rqBuiltinAggregate1_1 COUNT MIN MAX SUM AVG GROUP_CONCAT SAMPLE 
 syntax case match
 " case sensitive: 
