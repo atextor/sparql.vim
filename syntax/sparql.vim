@@ -21,7 +21,7 @@ syntax keyword rqBuiltinCall str lang REGEX sameTERM langMatches datatype bound 
 syntax keyword rqKeyword1_1 MINUS DISTINCT GROUP BY HAVING NOT EXISTS SERVICE AS BINDINGS IF IN BIND COALESCE
 " The following list should also contain the CONTAINS keyword. But this trips
 " vim up as it's a keyword, and I have no idea how to escape it.
-syntax keyword rqBuiltinCall1_1 isNumeric IRI BNODE STRDT STRLANG UUID STRUUID STRLEN SUBSTR UCASE LCASE STRSTARTS STRENDS STRBEFORE STRAFTER ENCODE_FOR_URI CONCAT abs round ceil floor RAND now year month day hours minutes seconds timezone tz MD5 SHA1 SHA256 SHA384 SHA512
+syntax keyword rqBuiltinCall1_1 REPLACE isNumeric IRI BNODE STRDT STRLANG UUID STRUUID STRLEN SUBSTR UCASE LCASE STRSTARTS STRENDS STRBEFORE STRAFTER ENCODE_FOR_URI CONCAT abs round ceil floor RAND now year month day hours minutes seconds timezone tz MD5 SHA1 SHA256 SHA384 SHA512
 syntax keyword rqBuiltinAggregate1_1 COUNT MIN MAX SUM AVG GROUP_CONCAT SAMPLE 
 syntax case match
 " case sensitive: 
